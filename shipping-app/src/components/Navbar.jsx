@@ -12,7 +12,7 @@ function Navbar({ isLoggedIn }) { // Destructure isLoggedIn from props
     <nav className='bg-white text-black p-4 shadow-md'>
       <div className='container mx-auto flex justify-between items-center'>
         {/* Logo */}
-        <div className='text-2xl font-bold'>LOGO</div>
+        <div className='text-2xl text-[#F26A23] font-bold'>LOGO</div>
 
         {/* Menu */}
         <div className='hidden md:flex space-x-8'>

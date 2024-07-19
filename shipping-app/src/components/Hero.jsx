@@ -1,8 +1,11 @@
 // import React from 'react';
 import { FaArrowRight, FaUser } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 
 // eslint-disable-next-line react/prop-types
 function Hero({ isLogin }) {
+  const navigate = useNavigate();
   return (
     <div className='container mx-auto pt-32 px-4 py-16 flex flex-col md:flex-row items-center'>
       {!isLogin ? (
@@ -24,7 +27,7 @@ function Hero({ isLogin }) {
             <span>Send a Package</span>
             <FaArrowRight className='ml-2' />
           </button>
-          <button className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-4 px-6 rounded flex items-center justify-center w-full'>
+          <button onClick={()=>{navigate('/companyform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-4 px-6 rounded flex items-center justify-center w-full'>
             <FaUser className='mr-2' />
             <span>Create an account</span>
           </button>

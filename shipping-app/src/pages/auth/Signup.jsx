@@ -1,7 +1,11 @@
 // import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 
+
 function Signup() {
+  const navigate = useNavigate()
+
   return (
     <>
       <Navbar isLoggedIn={false}/>
@@ -87,6 +91,7 @@ function Signup() {
               </div>
               <div className='flex items-center justify-between mb-4'>
                 <button
+                onClick={()=>{navigate('/logged')}}
                   type='submit'
                   className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 w-full rounded focus:outline-none focus:shadow-outline'>
                   Sign Up
@@ -105,7 +110,7 @@ function Signup() {
                 </button>
               </div>
               <div className='mt-4 text-center'>
-                <p className='text-gray-700'>Already have an account? <a href='/signin' className='text-[#F26A23] hover:underline'>Sign In</a></p>
+                <p className='text-gray-700'>Already have an account? <a href='/login' className='text-[#F26A23] hover:underline'>Sign In</a></p>
               </div>
             </form>
           </div>

@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import { useState } from "react";
+
 
 const countryCodes = [
   { code: '+91', name: 'India', map: 'https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/india-flag-icon.png' },
@@ -12,6 +14,8 @@ const countryCodes = [
 function ContactDetailsForm() {
   const [selectedCountry, setSelectedCountry] = useState(countryCodes[0]);
   const [courierService, setCourierService] = useState('');
+
+  const navigate = useNavigate()
 
   return (
     <>
@@ -117,7 +121,7 @@ function ContactDetailsForm() {
             </div>
           </form>
           <div className='flex justify-end mt-4'>
-            <button className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-1/2'>
+            <button onClick={()=>{navigate('/billingform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-1/2'>
               Create Account
             </button>
           </div>

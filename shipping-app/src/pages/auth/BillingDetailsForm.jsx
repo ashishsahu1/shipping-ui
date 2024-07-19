@@ -1,5 +1,7 @@
+import { useNavigate} from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import { useState } from "react";
+
 
 const countryCodes = [
   { code: '+91', name: 'India', map: 'https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/india-flag-icon.png' },
@@ -12,7 +14,7 @@ const countryCodes = [
 function BillingDetailsForm() {
   const [selectedCountry, setSelectedCountry] = useState(countryCodes[0]);
   const [isGuest, setIsGuest] = useState(false);
-
+  const navigate = useNavigate()
   return (
     <>
       <Navbar isLoggedIn={true}/>
@@ -80,7 +82,7 @@ function BillingDetailsForm() {
             
           </form>
           <div className='flex justify-left mt-4'>
-            <button className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-1/3'>
+            <button onClick={()=>{navigate('/quoteform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-1/3'>
               Next
             </button>
           </div>
