@@ -42,10 +42,10 @@ function App() {
         <Route path="/rate" element={<RateTable/>}/>
         <Route path="/placed" element={<PlacedSuccess/>}/>
         <Route path="/blocked" element={<OrderBlocked/>}/>
-        <Route path="/feedback/form" element={<GiveFeedback/>}/>
-        <Route path="/feedback/thanks" element={<ThanksFeedback/>}/>
-        <Route path="/carrier/connect" element={<CarrierConnect/>}/>
-        <Route path="/carrier/account" element={<CarrierAccConnect/>}/>
+        <Route path="/feedbackform" element={<GiveFeedback/>}/>
+        <Route path="/feedbackthanks" element={<ThanksFeedback/>}/>
+        <Route path="/carrierconnect" element={<CarrierConnect/>}/>
+        <Route path="/carrieraccount" element={<CarrierAccConnect/>}/>
         <Route path="/summary" element={<OrderSummary/>}/>
         <Route path="/details" element={<FurtherDetails/>}/>
         <Route path="/dashboard" element={<Dashboard/>}/>
