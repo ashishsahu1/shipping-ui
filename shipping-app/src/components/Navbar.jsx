@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaBars, FaTimes, FaUserCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { FaBell, FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 function Navbar({ isLoggedIn, isAdmin }) {
@@ -14,7 +15,7 @@ function Navbar({ isLoggedIn, isAdmin }) {
     <nav className='bg-white text-black p-4 shadow-md'>
       <div className='container mx-auto flex justify-between items-center'>
         {/* Logo */}
-        <div className='text-2xl text-[#F26A23] font-bold'>LOGO</div>
+        <div className='text-2xl text-[#F26A23] font-bold'><Link to="/">LOGO</Link></div>
 
         {/* Menu */}
         {!isAdmin ? (

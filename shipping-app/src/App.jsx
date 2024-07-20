@@ -23,13 +23,15 @@ import Order from './pages/home/Order';
 import OrderPage from './pages/Order/OrderPage';
 import AdminDashboard from './pages/home/AdminDashboard';
 import Notfound from './pages/screens/Notfound';
+import ComponentPage from './pages/screens/ComponentPage';
 
 function App() {
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage isLogin={false}/>} />
+        <Route path="/" element={<ComponentPage/>} />
+        <Route path="/notlogged" element={<LandingPage isLogin={false}/>} />
         <Route path="/logged" element={<LandingPage isLogin={true}/>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
