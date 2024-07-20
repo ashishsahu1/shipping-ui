@@ -18,6 +18,11 @@ import CarrierConnect from './pages/carrier/CarrierConnect';
 import CarrierAccConnect from './pages/carrier/CarrierAccConnect';
 import OrderSummary from './pages/Order/OrderSummary';
 import FurtherDetails from './pages/home/FurtherDetails';
+import Dashboard from './pages/home/Dashboard';
+import Order from './pages/home/Order';
+import OrderPage from './pages/Order/OrderPage';
+import AdminDashboard from './pages/home/AdminDashboard';
+import Notfound from './pages/screens/Notfound';
 
 function App() {
 
@@ -43,7 +48,11 @@ function App() {
         <Route path="/carrier/account" element={<CarrierAccConnect/>}/>
         <Route path="/summary" element={<OrderSummary/>}/>
         <Route path="/details" element={<FurtherDetails/>}/>
-        
+        <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/order" element={<Order/>}/>
+        <Route path="/orderpage" element={<OrderPage/>}/>
+        <Route path="/admin" element={<AdminDashboard/>}/>
+        <Route path="*" element={<Notfound/>} />
       
       </Routes>
     </Router>

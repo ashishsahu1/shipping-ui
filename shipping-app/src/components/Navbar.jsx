@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { FaBars, FaTimes, FaUserCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { FaBell, FaSearch } from "react-icons/fa";
 
 // eslint-disable-next-line react/prop-types
-function Navbar({ isLoggedIn }) { // Destructure isLoggedIn from props
+function Navbar({ isLoggedIn, isAdmin }) {
+  // Destructure isLoggedIn from props
   const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
   const userName = "John Doe"; // Replace with actual user name
@@ -15,17 +17,21 @@ function Navbar({ isLoggedIn }) { // Destructure isLoggedIn from props
         <div className='text-2xl text-[#F26A23] font-bold'>LOGO</div>
 
         {/* Menu */}
-        <div className='hidden md:flex space-x-8'>
-          <a href='#' className='hover:text-gray-600'>
-            About Us
-          </a>
-          <a href='#' className='hover:text-gray-600'>
-            Services
-          </a>
-          <a href='#' className='hover:text-gray-600'>
-            How It Works
-          </a>
-        </div>
+        {!isAdmin ? (
+          <div className='hidden md:flex space-x-8'>
+            <a href='#' className='hover:text-gray-600'>
+              About Us
+            </a>
+            <a href='#' className='hover:text-gray-600'>
+              Services
+            </a>
+            <a href='#' className='hover:text-gray-600'>
+              How It Works
+            </a>
+          </div>
+        ) : (
+          <></>
+        )}
 
         {/* Buttons or User Profile */}
         <div className='hidden md:flex items-center space-x-4'>
@@ -47,10 +53,21 @@ function Navbar({ isLoggedIn }) { // Destructure isLoggedIn from props
               </button>
             </>
           ) : (
-            <div className='flex items-center space-x-2'>
-              <FaUserCircle size={24} className='text-gray-600' />
-              <span className='text-black font-bold'>{userName}</span>
-            </div>
+            <>
+              {isAdmin ? (
+                <div className='flex space-x-4 p-2 bg-white'>
+                  <FaBell className='text-gray-600 text-xl cursor-pointer' />
+                  <FaSearch className='text-gray-600 text-xl cursor-pointer' />
+                </div>
+              ) : (
+                <></>
+              )}
+
+              <div className='flex items-center space-x-2'>
+                <FaUserCircle size={24} className='text-gray-600' />
+                <span className='text-black font-bold'>{userName}</span>
+              </div>
+            </>
           )}
         </div>
 
