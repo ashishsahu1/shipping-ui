@@ -23,11 +23,11 @@ function Hero({ isLogin }) {
         // Buttons
         <div className='flex-1 flex justify-center mb-8 md:mb-0'>
         <div className='flex-1 mb-8 md:mb-0 flex flex-col space-y-4 max-w-md w-full md:w-1/2'>
-          <button className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-4 px-6 rounded flex items-center justify-center w-full'>
+          <button onClick={()=>{navigate('/quoteform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-4 px-6 rounded flex items-center justify-center w-full'>
             <span>Send a Package</span>
             <FaArrowRight className='ml-2' />
           </button>
-          <button onClick={()=>{navigate('/companyform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-4 px-6 rounded flex items-center justify-center w-full'>
+          <button onClick={()=>{navigate('/contactform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-4 px-6 rounded flex items-center justify-center w-full'>
             <FaUser className='mr-2' />
             <span>Create an account</span>
           </button>

@@ -2,9 +2,18 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import { useState } from "react";
 
+
 function QuoteForm() {
   const [sameDayDelivery, setSameDayDelivery] = useState(false);
   const navigate = useNavigate();
+  
+  const handleGetQuote = () => {
+    navigate('/resultload');
+    setTimeout(() => {
+      navigate('/rate');
+    }, 3000); // 3 seconds
+  };
+
   return (
     <>
       <Navbar isLoggedIn={true} />
@@ -103,7 +112,7 @@ function QuoteForm() {
                 <label className='block text-gray-700'>Preferred Date</label>
                 <input type='date' className='w-full p-2 border rounded' />
               </div>
-              <button onClick={()=>{navigate('/resultload')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-1/2'>
+              <button onClick={handleGetQuote}  className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-1/2'>
                 Get Quote
               </button>
             </div>

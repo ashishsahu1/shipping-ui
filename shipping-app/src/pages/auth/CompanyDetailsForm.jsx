@@ -87,7 +87,7 @@ function CompanyDetailsForm() {
             </div>
           </form>
           <div className='flex justify-end mt-4'>
-            <button onClick={()=>{navigate('/contactform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-1/2'>
+            <button onClick={()=>{navigate('/placed')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-1/2'>
               Create Account
             </button>
           </div>

@@ -82,7 +82,7 @@ function BillingDetailsForm() {
             
           </form>
           <div className='flex justify-left mt-4'>
-            <button onClick={()=>{navigate('/quoteform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-1/3'>
+            <button onClick={()=>{navigate('/companyform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-1/3'>
               Next
             </button>
           </div>

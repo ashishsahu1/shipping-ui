@@ -1,6 +1,8 @@
 import Navbar from "../../components/Navbar";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar isLoggedIn={false}/>
@@ -60,6 +62,7 @@ function Login() {
               </div>
               <div className='flex items-center justify-between mb-4'>
                 <button
+                  onClick={() => navigate("/logged")}
                   type='submit'
                   className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 w-full rounded focus:outline-none focus:shadow-outline'>
                   Login

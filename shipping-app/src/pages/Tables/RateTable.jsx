@@ -124,7 +124,7 @@ function RateTable() {
                   <td className='py-2 px-4 border-b'>{rate.accountRate}</td>
                   <td className='py-2 px-4 border-b'>{rate.savings}</td>
                   <td className='py-2 px-4 border-b'>
-                    <button className='bg-orange-500 hover:bg-orange-600 text-white font-bold py-1 px-2 rounded'>
+                    <button onClick={()=>{navigate('/summary')}} className='bg-orange-500 hover:bg-orange-600 text-white font-bold py-1 px-2 rounded'>
                       Select
                     </button>
                     <FaInfoCircle className='inline-block ml-2 text-gray-500 hover:text-gray-700 cursor-pointer' />

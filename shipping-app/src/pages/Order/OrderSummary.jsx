@@ -46,8 +46,8 @@ function OrderSummary() {
                 <p><span className="font-bold">Savings:</span>  20%</p>
             </div>
             <div className="flex justify-center item-center my-4">
-              <button onClick={()=>{navigate('/resultload')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded  w-3/4 right'>
-                Get Quote
+              <button onClick={()=>{navigate('/details')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded  w-3/4 right'>
+                Proceed to Pay
               </button>
             </div>
          </div>
