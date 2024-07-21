@@ -49,7 +49,7 @@ function CarrierAccConnect() {
           onClick={() => navigate(-1)}>
           <FaArrowLeft className='inline mr-2' /> Go Back
         </button>
-        <div className='absolute inset-0 flex flex-col items-center justify-center space-y-8'>
+        <div className='mt-20 md:mt-10 xl:mt-0 absolute inset-0 flex flex-col items-center justify-center space-y-8'>
           {/* First White Box */}
           <div className='bg-white rounded-lg mt-60 md:mt-1 lg:mt-0 p-8 lg:w-3/4 shadow-lg max-w-6xl flex flex-col md:flex-row items-center md:items-start'>
             <div className='md:w-1/2 p-4'>

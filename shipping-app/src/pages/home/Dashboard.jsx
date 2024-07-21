@@ -78,32 +78,34 @@ function Dashboard() {
         </div>
 
         <div className='feed-help flex justify-evenly flex-wrap md:flex-nowrap md:m-20 lg:mx-40 gap-8'>
-          <div className='section rounded-md feedback flex flex-row shadow-md p-4'>
+          <div className='section w-full md:w-1/2 my-4 rounded-md h-auto feedback flex flex-row shadow-md p-4'>
             <img className='w-32 h-auto' src='/feedback.png' alt='' />
             <div className='flex flex-col '>
               <p className="font-semibold">Share your Feedback</p>
-              <p>
+              <p className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                 perspiciatis nemo doloribus.
               </p>
-              <button className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-64 right'>
+              <button className='bg-[#F26A23]  hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-40 lg:w-auto right'>
                 Send Feedback
               </button>
             </div>
           </div>
-          <div className='section rounded-md help flex flex-row shadow-md p-4'>
-            <img className='' src='/help.png' alt='' />
-            <div className='flex flex-col'>
+
+          <div className='section w-full md:w-1/2 my-4 rounded-md h-auto feedback flex flex-row shadow-md p-4'>
+            <img className='w-32 h-auto' src='/help.png' alt='' />
+            <div className='flex flex-col '>
               <p className="font-semibold">Need any help?</p>
-              <p>
+              <p className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                 perspiciatis nemo doloribus.
               </p>
-              <button className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-64 right'>
+              <button className='bg-[#F26A23] lg:w-auto  hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-40 right'>
                 Ask for help
               </button>
             </div>
           </div>
+         
         </div>
       </div>
     </>

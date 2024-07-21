@@ -38,7 +38,8 @@ function CarrierConnect() {
                 Add Carrier
               </button>
             </div>
-            <table className='w-full border border-gray-300 rounded-lg overflow-hidden'>
+            <div className="table-section overflow-x-auto">
+              <table className='w-full border border-gray-300 rounded-lg overflow-hidden'>
               <thead className=''>
                 <tr>
                   <th className='p-2 border-b'>Carrier</th>
@@ -66,6 +67,7 @@ function CarrierConnect() {
                 {/* Add more rows as needed */}
               </tbody>
             </table>
+            </div>
           </div>
         </div>
       </div>

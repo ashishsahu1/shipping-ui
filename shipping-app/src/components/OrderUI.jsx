@@ -9,9 +9,9 @@ function OrderUI() {
             <div className="order-section w-20 h-20 bg-slate-400 rounded-md">
 
             </div>
-            <div className="order-section">
+            <div className="order-section m-4">
                 <p>Shipment Partner: Lorem, ipsum</p>
-                <p><span className="font-semibold">Expected delivery date :</span>20 June 2024</p>
+                <p className="my-2"><span className="font-semibold">Expected delivery date :</span>20 June 2024</p>
             </div>
             <div className="order-section">
                 <p>Shipment from: Lorem, ipsum</p>

@@ -18,7 +18,7 @@ function Order() {
             <OrderUI/>
             <OrderUI/>
         </div>
-        <div className='flex justify-end mt-8 xl:mx-40'>
+        <div className='flex justify-end mt-8 xl:mx-40 my-8'>
           <button className='bg-white hover:bg-gray-100 text-black font-bold py-2 px-4 rounded shadow-md border mx-1'>
             &lt;
           </button>
