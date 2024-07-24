@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { FaInfoCircle } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaInfoCircle, FaArrowLeft } from "react-icons/fa";
 import Navbar from "../../components/Navbar";
 
 function RateTable() {
@@ -12,6 +11,7 @@ function RateTable() {
       days: 5,
       globalRate: "$200",
       accountRate: "$180",
+      platformRate: "$150",
       savings: "$20",
     },
     {
@@ -20,6 +20,7 @@ function RateTable() {
       days: 7,
       globalRate: "$220",
       accountRate: "$200",
+      platformRate: "$170",
       savings: "$20",
     },
     {
@@ -28,6 +29,7 @@ function RateTable() {
       days: 7,
       globalRate: "$220",
       accountRate: "$200",
+      platformRate: "$190",
       savings: "$20",
     },
     {
@@ -36,6 +38,7 @@ function RateTable() {
       days: 7,
       globalRate: "$220",
       accountRate: "$200",
+      platformRate: "$190",
       savings: "$20",
     },
     {
@@ -44,6 +47,7 @@ function RateTable() {
       days: 7,
       globalRate: "$220",
       accountRate: "$200",
+      platformRate: "$190",
       savings: "$20",
     },
     {
@@ -52,6 +56,7 @@ function RateTable() {
       days: 7,
       globalRate: "$220",
       accountRate: "$200",
+      platformRate: "$190",
       savings: "$20",
     },
     {
@@ -60,6 +65,7 @@ function RateTable() {
       days: 7,
       globalRate: "$220",
       accountRate: "$200",
+      platformRate: "$190",
       savings: "$20",
     },
     {
@@ -68,6 +74,7 @@ function RateTable() {
       days: 7,
       globalRate: "$220",
       accountRate: "$200",
+      platformRate: "$190",
       savings: "$20",
     },
     {
@@ -76,6 +83,7 @@ function RateTable() {
       days: 7,
       globalRate: "$220",
       accountRate: "$200",
+      platformRate: "$190",
       savings: "$20",
     },
     {
@@ -84,6 +92,7 @@ function RateTable() {
       days: 7,
       globalRate: "$220",
       accountRate: "$200",
+      platformRate: "$190",
       savings: "$20",
     },
     // Add more rates as needed
@@ -110,18 +119,27 @@ function RateTable() {
                 <th className='py-2 px-4 border-b text-white'>Transit Days</th>
                 <th className='py-2 px-4 border-b text-white'>Global Rate</th>
                 <th className='py-2 px-4 border-b text-white'>Account Rate</th>
+                <th className='py-2 px-4 border-b text-white'>Platform Rate</th>
                 <th className='py-2 px-4 border-b text-white'>Savings</th>
                 <th className='py-2 px-4 border-b text-white'>Action</th>
               </tr>
             </thead>
             <tbody>
-              {rates.map((rate) => (
+              {rates.map((rate, index) => (
                 <tr key={rate.sno} className='text-center'>
                   <td className='py-2 px-4 border-b'>{rate.sno}</td>
                   <td className='py-2 px-4 border-b'>{rate.company}</td>
                   <td className='py-2 px-4 border-b'>{rate.days}</td>
                   <td className='py-2 px-4 border-b'>{rate.globalRate}</td>
                   <td className='py-2 px-4 border-b'>{rate.accountRate}</td>
+                  <td className='py-2 px-4 border-b text text-left'>
+                    {rate.platformRate}
+                    {index < 2 && (
+                      <span className='ml-2 bg-yellow-300 text-black font-bold text-xs rounded-full px-2 py-1'>
+                        Lowest Price
+                      </span>
+                    )}
+                  </td>
                   <td className='py-2 px-4 border-b'>{rate.savings}</td>
                   <td className='py-2 px-4 border-b'>
                     <button onClick={()=>{navigate('/summary')}} className='bg-orange-500 hover:bg-orange-600 text-white font-bold py-1 px-2 rounded'>

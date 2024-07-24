@@ -29,7 +29,7 @@ function OrderSummary() {
                     <p className="py-2"><span className="font-bold my-2">Pincode:</span>  KI232</p>
                     <p className="py-2"><span className="font-bold">City:</span>  Lorem ipsum</p>
                     <p className="py-2"><span className="font-bold">Address:</span>  Lorem ipsum</p>
-                    <p className="py-2"><span className="font-bold">Dimensions:</span>  10 x 10 x 10</p>
+                    <p className="py-2"><span className="font-bold">Dimensions:</span>  10cm x 10cm x 10cm</p>
                 </div>
                 <div className="ship-to py-4">
                     <p className="py-2"><span className="font-bold">Shipment to:</span>  Lorem ipsum</p>
@@ -40,13 +40,13 @@ function OrderSummary() {
                 </div>
             </div>
             <p className="mb-16"><span className="font-bold">Expected delivery date:</span> 20 June 2024</p>
-            <div className="order-details flex flex-col justify-evenly md:flex-row">
-                <p className=""><span className="font-bold">Rate:</span> $6</p>
-                <p><span className="font-bold">Transit Days:</span>  3 Days</p>
-                <p><span className="font-bold">Savings:</span>  20%</p>
+            <div className="order-details flex flex-col justify-between md:flex-row">
+                <p className="bg-slate-100 p-2 rounded "><span className="font-bold">Rate:</span> $6</p>
+                <p className="bg-slate-100 p-2 rounded "><span className="font-bold">Transit Days:</span>  3 Days</p>
+                <p className="bg-slate-100 p-2 rounded "><span className="font-bold">Savings:</span>  20%</p>
             </div>
             <div className="flex justify-center item-center my-4">
-              <button onClick={()=>{navigate('/details')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded  w-3/4 right'>
+              <button onClick={()=>{navigate('/details')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded  w-full right'>
                 Proceed to Pay
               </button>
             </div>

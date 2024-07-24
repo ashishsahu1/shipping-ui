@@ -93,14 +93,14 @@ function Signup() {
                 <button
                 onClick={()=>{navigate('/logged')}}
                   type='submit'
-                  className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 w-full rounded focus:outline-none focus:shadow-outline'>
+                  className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-3 px-4 w-full rounded focus:outline-none focus:shadow-outline'>
                   Sign Up
                 </button>
               </div>
               <div className='flex items-center justify-center'>
                 <button
                   type='button'
-                  className='bg-white hover:bg-gray-100 text-gray-700 font-bold py-2 px-4 w-full rounded border border-gray-300 focus:outline-none focus:shadow-outline flex items-center justify-center'>
+                  className='bg-white hover:bg-gray-100 text-gray-700 font-bold py-3 px-4 w-full rounded border border-gray-300 focus:outline-none focus:shadow-outline flex items-center justify-center'>
                   <img
                     src='/google.jpeg'
                     alt='Google logo'

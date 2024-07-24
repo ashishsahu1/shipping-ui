@@ -38,11 +38,11 @@ function QuoteForm() {
                 <div className='font-bold mb-2 text-3xl'>Shipping From</div>
                 <div>
                   <label className='block text-gray-700'>Enter place you want to ship from</label>
-                  <input type='text' className='w-full p-2 border rounded' />
+                  <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
                 <div>
                   <label className='block text-gray-700'>Select Location</label>
-                  <select className='w-full p-2 border rounded'>
+                  <select className='w-full p-2 border rounded my-2'>
                     <option value=''>Select Country</option>
                     <option value='USA'>USA</option>
                     <option value='Canada'>Canada</option>
@@ -51,27 +51,27 @@ function QuoteForm() {
                 </div>
                 <div>
                   <label className='block text-gray-700'>Postal Code</label>
-                  <input type='text' className='w-full p-2 border rounded' />
+                  <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
                 <div>
                   <label className='block text-gray-700'>City</label>
-                  <input type='text' className='w-full p-2 border rounded' />
+                  <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
                 <div>
                   <label className='block text-gray-700'>Enter Complete Address</label>
-                  <input type='text' className='w-full p-2 border rounded mb-2' />
-                  <input type='text' className='w-full p-2 border rounded' />
+                  <input type='text' className='w-full p-2 border rounded my-2' />
+                  <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
               </div>
               <div className='md:w-1/2 md:pl-2'>
                 <div className='font-bold mb-2 text-3xl'>Shipping To</div>
                 <div>
                   <label className='block text-gray-700'>Enter place you want to ship to</label>
-                  <input type='text' className='w-full p-2 border rounded' />
+                  <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
                 <div>
                   <label className='block text-gray-700'>Select Location</label>
-                  <select className='w-full p-2 border rounded'>
+                  <select className='w-full p-2 border rounded my-2'>
                     <option value=''>Select Country</option>
                     <option value='USA'>USA</option>
                     <option value='Canada'>Canada</option>
@@ -80,16 +80,16 @@ function QuoteForm() {
                 </div>
                 <div>
                   <label className='block text-gray-700'>Postal Code</label>
-                  <input type='text' className='w-full p-2 border rounded' />
+                  <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
                 <div>
                   <label className='block text-gray-700'>City</label>
-                  <input type='text' className='w-full p-2 border rounded' />
+                  <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
                 <div>
                   <label className='block text-gray-700'>Enter Complete Address</label>
-                  <input type='text' className='w-full p-2 border rounded mb-2' />
-                  <input type='text' className='w-full p-2 border rounded' />
+                  <input type='text' className='w-full p-2 border rounded my-2' />
+                  <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
               </div>
             </div>
@@ -97,22 +97,22 @@ function QuoteForm() {
               <div className='flex-1'>
                 <label className='block text-gray-700'>DIMS (L*B*H inches)</label>
                 <div className='flex gap-2'>
-                  <input type='text' className='w-full p-2 border rounded' placeholder='L' />
-                  <input type='text' className='w-full p-2 border rounded' placeholder='B' />
-                  <input type='text' className='w-full p-2 border rounded' placeholder='H' />
+                  <input type='text' className='w-full p-2 border rounded my-2' placeholder='L' />
+                  <input type='text' className='w-full p-2 border rounded my-2' placeholder='B' />
+                  <input type='text' className='w-full p-2 border rounded my-2' placeholder='H' />
                 </div>
               </div>
               <div className='flex-1'>
                 <label className='block text-gray-700'>Weight (lbs)</label>
-                <input type='text' className='w-full p-2 border rounded' />
+                <input type='text' className='w-full p-2 border rounded my-2' />
               </div>
             </div>
             <div className='flex justify-between items-center mt-4'>
               <div className='flex-1 w-1/2'>
                 <label className='block text-gray-700'>Preferred Date</label>
-                <input type='date' className='w-full p-2 border rounded' />
+                <input type='date' className='w-full p-2 border rounded my-2' />
               </div>
-              <button onClick={handleGetQuote}  className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-1/2'>
+              <button onClick={handleGetQuote}  className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-3 px-4 rounded ml-4 mt-6 w-1/2'>
                 Get Quote
               </button>
             </div>

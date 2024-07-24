@@ -64,7 +64,7 @@ function Login() {
                 <button
                   onClick={() => navigate("/logged")}
                   type='submit'
-                  className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 w-full rounded focus:outline-none focus:shadow-outline'>
+                  className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-3 px-6 w-full rounded focus:outline-none focus:shadow-outline'>
                   Login
                 </button>
               </div>

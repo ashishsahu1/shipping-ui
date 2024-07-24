@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import { useState } from "react";
 
-
 const countryCodes = [
   { code: '+91', name: 'India', map: 'https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/india-flag-icon.png' },
   { code: '+1', name: 'USA', map: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwwxhCMpFSg4qToHq_HKLhhU6bo5f1JJPh8w&s' },
@@ -13,24 +12,24 @@ const countryCodes = [
 
 function CompanyDetailsForm() {
   const [selectedCountry, setSelectedCountry] = useState(countryCodes[0]);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <>
-      <Navbar isLoggedIn={true}/>
+      <Navbar isLoggedIn={true} />
       
       <div className='flex flex-col md:flex-row container mx-auto p-4'>
         {/* Left Section */}
-        <div className='xl:w-4/6 md:w-7/10 w-full bg-white p-8 rounded-lg mt-10 shadow-md md:mr-4'>
+        <div className='xl:w-4/6 md:w-7/10 w-full bg-white p-8 rounded-lg mt-10 shadow-md md:mr-4 flex flex-col'>
           <h2 className='text-left text-2xl font-semibold mb-4 pb-4'>Company Details</h2>
-          <form className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+          <form className='grid grid-cols-1 md:grid-cols-2 gap-4 flex-grow'>
             <div>
               <label className='block text-gray-700'>Company Name</label>
-              <input type='text' className='w-full p-2 border rounded' />
+              <input type='text' className='w-full p-2 border rounded mb-4' />
             </div>
             <div>
               <label className='block text-gray-700'>Company Contact Number</label>
-              <div className='flex relative'>
+              <div className='flex relative mb-4'>
                 <select
                   value={selectedCountry.code}
                   onChange={(e) => {
@@ -52,25 +51,19 @@ function CompanyDetailsForm() {
             </div>
             <div>
               <label className='block text-gray-700'>Company Email</label>
-              <input type='email' className='w-full p-2 border rounded' />
-            </div>
-            <div>
-              <label className='block text-gray-700'>Address</label>
-              <input type='text' className='w-full p-2 border rounded mb-2' placeholder='Street' />
-              <input type='text' className='w-full p-2 border rounded mb-2' placeholder='City' />
-              <input type='text' className='w-full p-2 border rounded' placeholder='State' />
+              <input type='email' className='w-full p-2 border rounded mb-4' />
             </div>
             <div>
               <label className='block text-gray-700'>City</label>
-              <input type='text' className='w-full p-2 border rounded' />
+              <input type='text' className='w-full p-2 border rounded mb-4' />
             </div>
             <div>
               <label className='block text-gray-700'>Pincode</label>
-              <input type='text' className='w-full p-2 border rounded' />
+              <input type='text' className='w-full p-2 border rounded mb-4' />
             </div>
             <div>
               <label className='block text-gray-700'>Select Country</label>
-              <select className='w-full p-2 border rounded'>
+              <select className='w-full p-2 border rounded mb-4'>
                 <option value=''>Select Country</option>
                 <option value='USA'>USA</option>
                 <option value='Canada'>Canada</option>
@@ -79,15 +72,21 @@ function CompanyDetailsForm() {
             </div>
             <div>
               <label className='block text-gray-700'>Customer Tax ID</label>
-              <input type='text' className='w-full p-2 border rounded' />
+              <input type='text' className='w-full p-2 border rounded mb-4' />
             </div>
             <div>
               <label className='block text-gray-700'>Customer Account Number</label>
-              <input type='text' className='w-full p-2 border rounded' />
+              <input type='text' className='w-full p-2 border rounded mb-4' />
+            </div>
+            <div>
+              <label className='block text-gray-700'>Address</label>
+              <input type='text' className='w-full p-2 border rounded mb-2' placeholder='Street' />
+              <input type='text' className='w-full p-2 border rounded mb-2' placeholder='City' />
+              <input type='text' className='w-full p-2 border rounded mb-4' placeholder='State' />
             </div>
           </form>
           <div className='flex justify-end mt-4'>
-            <button onClick={()=>{navigate('/success')}} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-1/2'>
+            <button onClick={() => { navigate('/success'); }} className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-3 px-4 rounded w-full'>
               Create Account
             </button>
           </div>

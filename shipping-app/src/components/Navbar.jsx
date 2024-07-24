@@ -42,7 +42,7 @@ function Navbar({ isLoggedIn, isAdmin }) {
                 onClick={() => {
                   navigate("/login");
                 }}
-                className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded'>
+                className='bg-[#fdfdfd] border-2 hover:bg-gray-100 text-black font-bold py-2 px-4 rounded'>
                 Login
               </button>
               <button
