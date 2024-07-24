@@ -167,7 +167,7 @@ function FurtherDetails() {
                 onClick={() => {
                   navigate("/placed");
                 }}
-                className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-full'>
+                className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-3 px-4 rounded ml-4 mt-6 w-full'>
                 Proceed to pay
               </button>
             </div>
