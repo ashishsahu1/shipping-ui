@@ -135,7 +135,7 @@ function RateTable() {
                   <td className='py-2 px-4 border-b text text-left'>
                     {rate.platformRate}
                     {index < 2 && (
-                      <span className='ml-2 bg-yellow-300 text-black font-bold text-xs rounded-full px-2 py-1'>
+                      <span className='md:ml-2 bg-yellow-300 text-black text-xs rounded-md px-2 py-1'>
                         Lowest Price
                       </span>
                     )}
