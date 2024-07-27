@@ -36,11 +36,11 @@ function QuoteForm() {
             <div className='md:flex'>
               <div className='md:w-1/2 md:pr-2'>
                 <div className='font-bold mb-2 text-3xl'>Shipping From</div>
-                <div>
+                <div className="mb-3">
                   <label className='block text-gray-700'>Enter place you want to ship from</label>
                   <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
-                <div>
+                <div className="mb-3">
                   <label className='block text-gray-700'>Select Location</label>
                   <select className='w-full p-2 border rounded my-2'>
                     <option value=''>Select Country</option>
@@ -49,15 +49,15 @@ function QuoteForm() {
                     <option value='UK'>UK</option>
                   </select>
                 </div>
-                <div>
+                <div className="mb-3">
                   <label className='block text-gray-700'>Postal Code</label>
                   <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
-                <div>
+                <div className="mb-3">
                   <label className='block text-gray-700'>City</label>
                   <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
-                <div>
+                <div className="mb-3">
                   <label className='block text-gray-700'>Enter Complete Address</label>
                   <input type='text' className='w-full p-2 border rounded my-2' />
                   <input type='text' className='w-full p-2 border rounded my-2' />
@@ -65,11 +65,11 @@ function QuoteForm() {
               </div>
               <div className='md:w-1/2 md:pl-2'>
                 <div className='font-bold mb-2 text-3xl'>Shipping To</div>
-                <div>
+                <div className="mb-3">
                   <label className='block text-gray-700'>Enter place you want to ship to</label>
                   <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
-                <div>
+                <div className="mb-3">
                   <label className='block text-gray-700'>Select Location</label>
                   <select className='w-full p-2 border rounded my-2'>
                     <option value=''>Select Country</option>
@@ -78,15 +78,15 @@ function QuoteForm() {
                     <option value='UK'>UK</option>
                   </select>
                 </div>
-                <div>
+                <div className="mb-3">
                   <label className='block text-gray-700'>Postal Code</label>
                   <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
-                <div>
+                <div className="mb-3">
                   <label className='block text-gray-700'>City</label>
                   <input type='text' className='w-full p-2 border rounded my-2' />
                 </div>
-                <div>
+                <div className="mb-3">
                   <label className='block text-gray-700'>Enter Complete Address</label>
                   <input type='text' className='w-full p-2 border rounded my-2' />
                   <input type='text' className='w-full p-2 border rounded my-2' />
@@ -119,7 +119,7 @@ function QuoteForm() {
           </form>
         </div>
         {/* Right Section */}
-        <div className='w-full xl:w-2/6 md:w-3/10 flex flex-col justify-end items-center mt-4 md:mt-0'>
+        <div className='w-full xl:w-2/6 md:w-3/10 flex flex-col justify-center items-center mt-4 md:mt-0'>
           <img
             src='/quote.png'
             alt='Company'

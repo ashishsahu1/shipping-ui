@@ -15,7 +15,7 @@ function Navbar({ isLoggedIn, isAdmin }) {
     <nav className='bg-white text-black p-4 shadow-md'>
       <div className='container mx-auto flex justify-between items-center'>
         {/* Logo */}
-        <div className='text-2xl text-[#F26A23] font-bold'><Link to="/">LOGO</Link></div>
+        <div className='text-2xl text-[#F26A23] font-bold'><Link to="/testui">LOGO</Link></div>
 
         {/* Menu */}
         {!isAdmin ? (

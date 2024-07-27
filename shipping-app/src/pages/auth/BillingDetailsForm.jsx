@@ -38,11 +38,11 @@ function BillingDetailsForm() {
               
             </div>
             <div>
-              <label className='block text-gray-700'>Billing Contact Name</label>
+              <label className='block text-gray-700 mb-2'>Billing Contact Name</label>
               <input type='text' className='w-full p-2 border rounded' />
             </div>
             <div>
-              <label className='block text-gray-700'>Billing Contact Number</label>
+              <label className='block text-gray-700 mb-2'>Billing Contact Number</label>
               <div className='flex relative'>
                 <select
                   value={selectedCountry.code}
@@ -64,19 +64,19 @@ function BillingDetailsForm() {
               </div>
             </div>
             <div>
-              <label className='block text-gray-700'>Billing Contact Email Address</label>
+              <label className='block text-gray-700  mb-2'>Billing Contact Email Address</label>
               <input type='email' className='w-full p-2 border rounded' />
             </div>
             <div>
-              <label className='block text-gray-700'>Ebilling Email</label>
+              <label className='block text-gray-700  mb-2'>Ebilling Email</label>
               <input type='email' className='w-full p-2 border rounded' />
             </div>
             <div>
-              <label className='block text-gray-700'>Billing Contact Ref ID</label>
+              <label className='block text-gray-700  mb-2'>Billing Contact Ref ID</label>
               <input type='text' className='w-full p-2 border rounded' />
             </div>
             <div>
-              <label className='block text-gray-700'>Ebilling ID</label>
+              <label className='block text-gray-700  mb-2'>Ebilling ID</label>
               <input type='text' className='w-full p-2 border rounded' />
             </div>
             
@@ -88,7 +88,7 @@ function BillingDetailsForm() {
           </div>
         </div>
         {/* Right Section */}
-        <div className='w-full xl:w-2/6 md:w-3/10 flex flex-col justify-end items-center mt-4 md:mt-0'>
+        <div className='w-full xl:w-2/6 md:w-3/10 flex flex-col justify-center items-center mt-4 md:mt-0'>
           <img
             src='/company.png'
             alt='Company'

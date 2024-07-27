@@ -17,7 +17,7 @@ function OrderPage() {
          <h2 className='text-left mt-4 ml-8 lg:ml-32 text-2xl font-semibold mb-1 pb-1'>View Order details</h2>
       <div className='flex flex-col md:flex-row container mx-auto p-4'>
         {/* Left Section */}
-        <div className='flex flex-col md:flex-row justify-evenly xl:w-4/6 md:w-7/10 w-full bg-white p-4 rounded-lg shadow-xl md:mr-4'>
+        <div className='flex flex-col md:flex-row justify-evenly xl:w-4/6 md:w-7/10 w-full bg-white p-4 rounded-lg shadow-xl pb-10 md:mr-4'>
          <div className="imgg mr-6 bg-gray-300 w-32 h-32 rounded">
             
          </div>

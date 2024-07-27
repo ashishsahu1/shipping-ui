@@ -174,7 +174,7 @@ function FurtherDetails() {
           </form>
         </div>
         {/* Right Section */}
-        <div className='w-full xl:w-2/6 md:w-3/10 flex flex-col justify-end items-center mt-4 md:mt-0'>
+        <div className='w-full xl:w-2/6 md:w-3/10 flex flex-col justify-center items-center mt-4 md:mt-0'>
           <img
             src='/paymentPage.png'
             alt='Company'

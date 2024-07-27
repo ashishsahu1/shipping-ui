@@ -10,7 +10,7 @@ function Dashboard() {
       <div className='main-body m-4'>
         <p className='text-xl font-bold lg:mx-40 my-8'>User Dashboard</p>
         <div className='user-dashboard flex flex-col xl:flex-row justify-center items-center m-8 rounded gap-8 xl:px-32'>
-          <div className='dash-section shadow-lg h-40 w-full flex justify-evenly items-center'>
+          <div className='dash-section shadow-lg h-64 md:h-52 w-full flex flex-col  md:flex-row justify-evenly items-center'>
             <img
               className='w-20 h-auto package-icon'
               src='/packageicon.png'
@@ -22,7 +22,7 @@ function Dashboard() {
             </button>
           </div>
           <div className='parent-section w-full h-full gap-8  flex flex-col md:flex-row justify-center items-center'>
-            <div className='dash-section shadow-md rounded p-8 md:w-1/2'>
+            <div className='dash-section shadow-md rounded h-52 p-8 md:w-1/2'>
               <p className='text-xl font-semibold mb-2'>Carrier Connect</p>
               <p>Connect with different Carrier</p>
               <button className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-30'>

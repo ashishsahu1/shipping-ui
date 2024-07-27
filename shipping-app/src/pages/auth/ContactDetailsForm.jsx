@@ -24,21 +24,21 @@ function ContactDetailsForm() {
         {/* Left Section */}
         <div className='xl:w-4/6 md:w-7/10 w-full bg-white p-8 rounded-lg mt-2 shadow-md md:mr-4'>
           <h2 className='text-left text-2xl font-semibold mb-4 pb-4'>Contact Details</h2>
-          <form className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+          <form className='grid grid-cols-1 md:grid-cols-2 gap-3'>
             <div className='mt-4'>
-              <label className='block text-gray-700'>Name</label>
+              <label className='block text-gray-700 pb-2'>Name</label>
               <input type='text' className='w-full p-2 border rounded mb-4' />
             </div>
             <div className='mt-4'>
-              <label className='block text-gray-700'>Date of Birth</label>
+              <label className='block text-gray-700 pb-2'>Date of Birth</label>
               <input type='date' className='w-full p-2 border rounded mb-4' />
             </div>
             <div className='mt-4'>
-              <label className='block text-gray-700'>Email Address</label>
+              <label className='block text-gray-700 pb-2'>Email Address</label>
               <input type='email' className='w-full p-2 border rounded mb-4' />
             </div>
             <div className='mt-4'>
-              <label className='block text-gray-700'>Contact Number</label>
+              <label className='block text-gray-700 pb-2'>Contact Number</label>
               <div className='flex relative mb-4'>
                 <select
                   value={selectedCountry.code}
@@ -60,16 +60,16 @@ function ContactDetailsForm() {
               </div>
             </div>
             <div className='mt-4'>
-              <label className='block text-gray-700'>City</label>
+              <label className='block text-gray-700 pb-2'>City</label>
               <input type='text' className='w-full p-2 border rounded mb-4' />
             </div>
             <div className='mt-4'>
-              <label className='block text-gray-700'>Address</label>
+              <label className='block text-gray-700 pb-2'>Address</label>
               <input type='text' className='w-full p-2 border rounded mb-2' placeholder='Street' />
               <input type='text' className='w-full p-2 border rounded mb-4' placeholder='City' />
             </div>
             <div className='mt-4'>
-              <label className='block text-gray-700'>Select Country</label>
+              <label className='block text-gray-700 pb-2'>Select Country</label>
               <select className='w-full p-2 border rounded mb-4'>
                 <option value=''>Select Country</option>
                 <option value='USA'>USA</option>
@@ -78,11 +78,11 @@ function ContactDetailsForm() {
               </select>
             </div>
             <div className='mt-4'>
-              <label className='block text-gray-700'>Pincode</label>
+              <label className='block text-gray-700 pb-2'>Pincode</label>
               <input type='text' className='w-full p-2 border rounded mb-4' />
             </div>
             <div className='mt-4'>
-              <label className='block text-gray-700'>Select Gender</label>
+              <label className='block text-gray-700 pb-2'>Select Gender</label>
               <select className='w-full p-2 border rounded mb-4'>
                 <option value=''>Select Gender</option>
                 <option value='Male'>Male</option>
@@ -91,7 +91,7 @@ function ContactDetailsForm() {
               </select>
             </div>
             <div className='mt-4'>
-              <label className='block text-gray-700'>Previous Courier Service Used</label>
+              <label className='block text-gray-700 pb-2'>Previous Courier Service Used</label>
               <select 
                 className='w-full p-2 border rounded mb-4'
                 value={courierService}
@@ -115,7 +115,7 @@ function ContactDetailsForm() {
               </button>
             </div>
             <div className='mt-4'>
-              <label className='block text-gray-700'>Contact Ref ID</label>
+              <label className='block text-gray-700 pb-2'>Contact Ref ID</label>
               <input type='text' className='w-full p-2 border rounded mb-4' />
               
             </div>
@@ -128,7 +128,7 @@ function ContactDetailsForm() {
           
         </div>
         {/* Right Section */}
-        <div className='w-full xl:w-2/6 md:w-3/10 flex flex-col justify-end items-center mt-4 md:mt-0'>
+        <div className='w-full xl:w-2/6 md:w-3/10 flex flex-col justify-center items-center mt-4 md:mt-0'>
           <img
             src='/company.png'
             alt='Company'
