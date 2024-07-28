@@ -33,6 +33,7 @@ function App() {
         <Route path="/testui" element={<ComponentPage/>} />
         <Route path="/" element={<LandingPage isLogin={false}/>} />
         <Route path="/logged" element={<LandingPage isLogin={true}/>} />
+        <Route path="/notlogged" element={<LandingPage isLogin={false}/>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/success" element={<AccountCreation/>} />

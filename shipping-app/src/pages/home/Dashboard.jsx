@@ -2,8 +2,10 @@ import Navbar from "../../components/Navbar";
 import OrderUI from "../../components/OrderUI";
 import { FaUserCircle } from "react-icons/fa";
 import ProgressBar from "../../components/ProgressBar";
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar isLoggedIn={true}/>
@@ -17,7 +19,9 @@ function Dashboard() {
               alt=''
             />
             <p>Hi! It is a good day to send a new package</p>
-            <button className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-30'>
+            <button className='bg-[#F26A23] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded ml-4 mt-6 w-30'  onClick={() => {
+                  navigate("/quoteform");
+                }}>
               Send package
             </button>
           </div>
