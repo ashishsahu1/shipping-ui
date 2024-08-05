@@ -20,26 +20,31 @@ function ContactDetailsForm() {
     <>
       <Navbar isLoggedIn={true} />
       
-      <div className='flex flex-col md:flex-row container mx-auto p-4'>
-        {/* Left Section */}
-        <div className='xl:w-4/6 md:w-7/10 w-full bg-white p-8 rounded-lg mt-2 shadow-md md:mr-4'>
+      <div className='flex justify-center container mx-auto p-4 w-full'>
+        {/* Form Container */}
+        <div className='w-full max-w-7xl bg-white p-8 rounded-lg mt-2 shadow-md'>
           <h2 className='text-left text-2xl font-semibold mb-4 pb-4'>Contact Details</h2>
-          <form className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-            <div className='mt-4'>
+          <form className='grid grid-cols-1 md:grid-cols-4 gap-6'>
+            <div className='col-span-4 md:col-span-1'>
               <label className='block text-gray-700 pb-2'>Name</label>
-              <input type='text' className='w-full p-2 border rounded mb-4' />
+              <input type='text' className='w-full p-2 border rounded' />
             </div>
-            <div className='mt-4'>
+            <div className='col-span-4 md:col-span-1'>
+              <label className='block text-gray-700 pb-2'>Select Location</label>
+              <select className='w-full p-2 border rounded'>
+                <option value=''>Select Country</option>
+                <option value='USA'>USA</option>
+                <option value='Canada'>Canada</option>
+                <option value='UK'>UK</option>
+              </select>
+            </div>
+            <div className='col-span-4 md:col-span-1'>
               <label className='block text-gray-700 pb-2'>Date of Birth</label>
-              <input type='date' className='w-full p-2 border rounded mb-4' />
+              <input type='date' className='w-full p-2 border rounded' />
             </div>
-            <div className='mt-4'>
-              <label className='block text-gray-700 pb-2'>Email Address</label>
-              <input type='email' className='w-full p-2 border rounded mb-4' />
-            </div>
-            <div className='mt-4'>
+            <div className='col-span-4 md:col-span-1'>
               <label className='block text-gray-700 pb-2'>Contact Number</label>
-              <div className='flex relative mb-4'>
+              <div className='flex relative'>
                 <select
                   value={selectedCountry.code}
                   onChange={(e) => {
@@ -59,38 +64,36 @@ function ContactDetailsForm() {
                 <input type='text' className='w-full pl-1 p-2 border rounded-r' />
               </div>
             </div>
-            <div className='mt-4'>
+
+            <div className='col-span-4 md:col-span-1'>
+              <label className='block text-gray-700 pb-2'>Postal Code</label>
+              <input type='text' className='w-full p-2 border rounded' />
+            </div>
+            <div className='col-span-4 md:col-span-1'>
               <label className='block text-gray-700 pb-2'>City</label>
-              <input type='text' className='w-full p-2 border rounded mb-4' />
+              <input type='text' className='w-full p-2 border rounded' />
             </div>
-            <div className='mt-4'>
-              <label className='block text-gray-700 pb-2'>Address</label>
-              <input type='text' className='w-full p-2 border rounded mb-2' placeholder='Street' />
-              <input type='text' className='w-full p-2 border rounded mb-4' placeholder='City' />
-            </div>
-            <div className='mt-4'>
-              <label className='block text-gray-700 pb-2'>Select Country</label>
-              <select className='w-full p-2 border rounded mb-4'>
-                <option value=''>Select Country</option>
-                <option value='USA'>USA</option>
-                <option value='Canada'>Canada</option>
-                <option value='UK'>UK</option>
-              </select>
-            </div>
-            <div className='mt-4'>
-              <label className='block text-gray-700 pb-2'>Pincode</label>
-              <input type='text' className='w-full p-2 border rounded mb-4' />
-            </div>
-            <div className='mt-4'>
+            <div className='col-span-4 md:col-span-1'>
               <label className='block text-gray-700 pb-2'>Select Gender</label>
-              <select className='w-full p-2 border rounded mb-4'>
+              <select className='w-full p-2 border rounded'>
                 <option value=''>Select Gender</option>
                 <option value='Male'>Male</option>
                 <option value='Female'>Female</option>
                 <option value='Other'>Other</option>
               </select>
             </div>
-            <div className='mt-4'>
+            <div className='col-span-4 md:col-span-1'>
+              <label className='block text-gray-700 pb-2'>Contact Ref ID</label>
+              <input type='text' className='w-full p-2 border rounded' />
+            </div>
+
+            <div className='col-span-4'>
+              <label className='block text-gray-700 pb-2'>Enter Complete Address</label>
+              <input type='text' className='w-full p-2 border rounded mb-4' placeholder='Street' />
+              <input type='text' className='w-full p-2 border rounded mb-4' placeholder='City' />
+            </div>
+
+            <div className='col-span-4 md:col-span-2'>
               <label className='block text-gray-700 pb-2'>Previous Courier Service Used</label>
               <select 
                 className='w-full p-2 border rounded mb-4'
@@ -114,26 +117,17 @@ function ContactDetailsForm() {
                 Add More
               </button>
             </div>
-            <div className='mt-4'>
-              <label className='block text-gray-700 pb-2'>Contact Ref ID</label>
+            <div className='col-span-4 md:col-span-2'>
+              <label className='block text-gray-700 pb-2'>Enter Additional Address</label>
               <input type='text' className='w-full p-2 border rounded mb-4' />
-              
             </div>
-            <div className='flex justify-end mt-4'>
-            <button onClick={()=>{navigate('/billingform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white my-5 h-12 font-bold rounded w-full'>
-              Next
-            </button>
-          </div>
+
+            <div className='col-span-4 flex justify-end'>
+              <button onClick={()=>{navigate('/billingform')}} className='bg-[#F26A23] hover:bg-orange-700 text-white my-5 h-12 font-bold rounded w-full'>
+                Next
+              </button>
+            </div>
           </form>
-          
-        </div>
-        {/* Right Section */}
-        <div className='w-full xl:w-2/6 md:w-3/10 flex flex-col justify-center items-center mt-4 md:mt-0'>
-          <img
-            src='/company.png'
-            alt='Company'
-            className='w-full h-auto rounded-lg max-w-xs'
-          />
         </div>
       </div>
     </>
